@@ -64,11 +64,45 @@
       color: #666;
       line-height: 1.5;
     }
+    .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .button-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
   </style>
 </head>
 
 <body>
   <h1>鯊鯊大家族🦈</h1>
+  <div class="button-container">
+    <button onclick="clickDonate()">捐款</button>
+    <button onclick="clickContact()">聯繫</button>
+  <script>
+    function clickDonate() {
+      window.dadk('track', 'Donate')
+      alert("USDT-BNB:0xa093a1364cb9c1cebc36203fc0978a0b46b9fef7");
+
+    }
+
+    function clickContact() {
+      window.dadk('track', 'Contact')
+      alert("想要更多照片的話，請聯繫我們：jkl921102@gmail.com");
+    }
+  </script>
+  </div>
   <div class="doll-container">
     <div class="doll-item">
       <img src="images/img1.jpg" alt="泰迪熊">
@@ -132,6 +166,5 @@
     </div>
   </div>
 </body>
-
 </html>
 </div>
