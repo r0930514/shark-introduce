@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-    !function(){
-    var d=function d(a) {
-      for(var e=arguments.length,n=new Array(e>1?e-1:0),i=1;i<e;i++)
-      n[i-1]=arguments[i];
-      d.queue.push([a].concat(n))
-    };
-    d.queue=[],window.dadk=window.dadk||d;
-    var a=document.createElement("script");
-    a.src="undefined"!=typeof URLSearchParams?"https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js":"https://unpkg.com/@dcard/web-ad-tracking-sdk/build/outdated-dadk.iife.js",
-    document.head.appendChild(a),
-    window.dadk("init", "ZA8WPD6alXlzC36zkpvZ8"), window.dadk("track", "PageView")}();
-    </script>
+    !function () {
+      var d = function d(a) {
+        for (var e = arguments.length, n = new Array(e > 1 ? e - 1 : 0), i = 1; i < e; i++)
+          n[i - 1] = arguments[i];
+        d.queue.push([a].concat(n))
+      };
+      d.queue = [], window.dadk = window.dadk || d;
+      var a = document.createElement("script");
+      a.src = "undefined" != typeof URLSearchParams ? "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js" : "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/outdated-dadk.iife.js",
+        document.head.appendChild(a),
+        window.dadk("init", "ZA8WPD6alXlzC36zkpvZ8"), window.dadk("track", "PageView")
+    }();
+  </script>
   <title>鯊鯊大家族🦈</title>
   <style>
     body {
@@ -25,39 +27,46 @@
       padding: 20px;
       background-color: #f0f0f0;
     }
+
     h1 {
       text-align: center;
       color: #333;
     }
+
     .doll-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       padding: 20px;
     }
+
     .doll-item {
       background-color: white;
       border-radius: 10px;
       padding: 15px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     .doll-item img {
       max-width: 100%;
       height: auto;
       border-radius: 5px;
       margin-bottom: 10px;
     }
+
     .doll-item h2 {
       color: #444;
       margin: 10px 0;
     }
+
     .doll-item p {
       color: #666;
       line-height: 1.5;
     }
   </style>
 </head>
+
 <body>
   <h1>鯊鯊大家族🦈</h1>
   <div class="doll-container">
@@ -91,6 +100,38 @@
       <h2>企鵝玩偶</h2>
       <p>圓滾滾的企鵝造型，黑白配色經典可愛。是收藏家最愛的玩偶之一。</p>
     </div>
+    <div class="doll-item">
+      <img src="images/img7.jpg" alt="熊貓玩偶">
+      <h2>熊貓玩偶</h2>
+      <p>可愛的熊貓造型，黑白配色經典可愛。是收藏家最愛的玩偶之一。</p>
+    </div>
+    <div class="doll-item">
+      <img src="images/img8.jpg" alt="兔子玩偶">
+      <h2>兔子玩偶</h2>
+      <p>柔軟的兔子玩偶，粉紅色的耳朵和尾巴。是小朋友最愛的玩偶之一。</p>
+    </div>
+    <div class="doll-item">
+      <img src="images/img9.jpg" alt="小狗玩偶">
+      <h2>小狗玩偶</h2>
+      <p>可愛的小狗造型，棕色的毛髮和大耳朵。是家庭寵物的最佳替代品。</p>
+    </div>
+    <div class="doll-item">
+      <img src="images/img10.jpg" alt="小貓玩偶">
+      <h2>小貓玩偶</h2>
+      <p>溫柔的小貓造型，灰色的毛髮和綠色的眼睛。是貓咪愛好者的最愛。</p>
+    </div>
+    <div class="doll-item">
+      <img src="images/img11.jpg" alt="小熊玩偶">
+      <h2>小熊玩偶</h2>
+      <p>經典的小熊造型，棕色的毛髮和圓圓的耳朵。是所有年齡層的最愛。</p>
+    </div>
+    <div class="doll-item">
+      <img src="images/img12.jpg" alt="長頸鹿玩偶">
+      <h2>長頸鹿玩偶</h2>
+      <p>高大的長頸鹿造型，黃色的毛髮和棕色的斑點。是動物園愛好者的最愛。</p>
+    </div>
   </div>
 </body>
-</html></div>
+
+</html>
+</div>
